@@ -1,0 +1,40 @@
+1,30c1,8
+< 
+< _program
+< 
+<   _class
+<     Test
+<     Object
+<     filename
+<     (
+< 
+<     _attr
+<       foo
+<       Test
+< 
+<       _no_expr
+<       : _no_type
+< 
+<     _method
+<       bar
+<       Object
+< 
+<       _dispatch
+< 
+<         _object
+<           foo
+<         : _no_type
+<         bar
+<         (
+<         )
+<       : _no_type
+<     )
+---
+> ../lexer: Command not found.
+> java.lang.NullPointerException
+> 	at CoolParser.syntax_error(CoolParser.java:418)
+> 	at java_cup.runtime.lr_parser.parse(lr_parser.java:595)
+> 	at Parser.main(Parser.java:35)
+> java.lang.Throwable: Unexpected exception in parser
+> 	at Utilities.fatalError(Utilities.java:40)
+> 	at Parser.main(Parser.java:45)
